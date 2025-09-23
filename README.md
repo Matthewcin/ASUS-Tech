@@ -12,7 +12,8 @@ El sitio contendrá un catalogo de Notebooks ASUS por Categorias (Estudio, Ofici
 
 ## Diagrama de Entidad-Relación (DER)
 El archivo que contiene el DER del modelo de datos se encuentra en:  
-**`DER_notebooks_asus.jpeg`**
+**`DER_notebooks_asus.png`**
+https://i.imgur.com/IcNRW6g.png
 
 ### Descripción general del DER
 El modelo incluyo:  
