@@ -37,9 +37,9 @@ CREATE TABLE `categoria` (
 --
 
 INSERT INTO `categoria` (`categoria`, `nombre`) VALUES
-(1, 'Alta'),
-(2, 'Media'),
-(3, 'Baja');
+(1, 'Gamer'),
+(2, 'Oficina'),
+(3, 'Estudio');
 
 -- --------------------------------------------------------
 
