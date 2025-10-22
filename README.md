@@ -1,4 +1,4 @@
-# TPE Parte 1 - Tienda de Notebooks ASUS
+# TPE Parte 2 - Tienda de Notebooks ASUS
 
 ## Integrantes del grupo
 - Planes Mateo Valentín - mateo62009mp@gmail.com
