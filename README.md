@@ -12,12 +12,12 @@ El sitio contendrá un catalogo de Notebooks ASUS por Categorias (Estudio, Ofici
 
 ## Diagrama de Entidad-Relación (DER)
 El archivo que contiene el DER del modelo de datos se encuentra en:  
-**`DER_notebooks_asus.png`**
-https://i.imgur.com/IcNRW6g.png
+**`DER.png`**
+https://i.imgur.com/g85tjNm.png
 
 ### Descripción general del DER
 El modelo incluyo:  
-- **Producto**: Representa cada notebook ASUS disponible.
+- **Notebooks**: Representa cada notebook ASUS disponible.
     ID: Autoincrementable y único
     Modelo: Modelo del Producto, EJ: 'ASUS Vivobook E1504F'
     Descripcion: Descripción del Producto.
@@ -27,10 +27,18 @@ El modelo incluyo:
 
 - **Categoria**: Información de la categoria antes Nombrada.
     ID: Representa la Categoria:
+    Nombre: Tipo de categoria
         1- Gamer
         2- Oficina
         3- Estudio
+    Descripcion: Descripcion definida
 
+- **Usuarios**: Información de la categoria antes Nombrada.
+        user_id: Representa el id de usuario
+        Username: nombre de usuario
+        Password: contraseña del usuario (hasheada con PASSWORD_DEFAULT)
+        Role: Rol de usuario (Miembro por DEFAULT, Admins se ingresan manualmente)
+  
 ## Código SQL de la BBDD
 El código SQL para ejecutar desde phpMyAdmin para crear la base de datos se encuentra en:  
 **`db_asus.sql`**
