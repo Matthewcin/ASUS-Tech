@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="../css/formulario.agregar.css">
+<form action="<?php echo BASE_URL ?>actualizarCategorias/<?php echo $categoria->id ?>" method="POST" enctype="multipart/form-data">
+  <label for="categoria">categoria:</label>
+  <input type="text" id="categoria" name="categoria" value="<?php echo $categoria->nombre ?>">
+
+  <label for="descripcion">Descripción:</label>
+  <textarea id="descripcion" name="descripcion"><?php echo $categoria->descripcion ?></textarea>
+
+  <button type="submit">Guardar</button>
+  <button href="dashboard">Volver</button>
+</form>

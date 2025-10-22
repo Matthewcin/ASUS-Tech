@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="css/formulario.agregar.css">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/header.css">
+<style>
+    #loginBtn {
+        width: 100%;
+        background-color: #7b2ff7;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #222;
+        color: #fff;
+        outline: none;
+        font-size: 14px;
+        transition: border 0.2s;
+    }
+
+    input:focus {
+        border: 1px solid #7b2ff7;
+    }
+
+    p {
+        margin-top: 15px;
+        color: gray;
+    }
+
+    a {
+        text-decoration: none;
+        color: #7b2ff7;
+    }
+</style>
+<div>
+    <form action="" method="post" style="margin: 30vh 0">
+        <h2>Iniciar Sesión</h2>
+        <div>
+            <label for="username">Usuario</label>
+            <input type="text" name="username">
+        </div>
+        <div>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <input type="submit" value="Iniciar Sesión" id="loginBtn">
+        </div>
+        <div>
+            <p>¿Aún no tenes una Cuenta? <a href="registrarse">Registrate</a></p>
+        </div>
+    </form>
+</div>

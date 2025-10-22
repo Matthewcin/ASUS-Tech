@@ -1,0 +1,12 @@
+  <!-- Carrusel de productos -->
+  <section id="producto" class="seccion">
+    <div class="carrusel">
+      <?php foreach ($computadoras as $computadora) { ?>
+        <div class="diapositiva">
+          <img src="<?php echo $computadora->img ?>" alt="<?php echo $computadora->modelo ?>">
+          <h2><?php echo $computadora->modelo ?></h2>
+          <a class="boton" href="<?php echo BASE_URL ?>mostrar_detalle/<?php echo $computadora->id ?>">Más detalles</a>
+        </div>
+      <?php } ?>
+    </div>
+  </section>

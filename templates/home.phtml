@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AsusTech Demo</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+  <!-- Hero con imagen -->
+  <section id="inicio" class="seccion hero">
+    <img id="imagen-inicio" class="imagen-fondo" src="./captura.png" alt="ASUS Hero">
+  </section>
+
+  <?php
+  include 'templates/carrusel.phtml';
+  ?>
+
+  <!-- Configuración de ensueño -->
+  <section id="ediciones" class="seccion">
+    <div class="contenido">
+      <h2>CONFIGURACIÓN DE ENSUEÑO</h2>
+      <div class="grupo-presentacion">
+        <div class="presentacion">Ultimate Immersion</div>
+        <div class="presentacion">Rendimiento Extremo</div>
+        <div class="presentacion">Diseño y Estética</div>
+        <div class="presentacion">Soporte Elite</div>
+      </div>
+      <a class="boton" href="<?php echo BASE_URL ?>computadoras/">explorar mas productos</a>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>

@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="<?php echo BASE_URL ?>/css/categorias.css">
+<link rel="stylesheet" href="<?php echo BASE_URL ?>/css/carpetasComputadoras.css">
+<div class="titulo-seccion">
+  <h2>CATEGORIAS PARA CADA TIPO DE ACTIVIDADES</h2>
+</div>
+<div id="categorias">
+  <?php foreach ($categorias as $categoria) { ?>
+    <a href="categoria/<?php echo $categoria->id ?>" class="card-link">
+      <div class="card categoria-<?php echo $categoria->id ?>">
+        <div class="card-title">
+          <h2><?php echo $categoria->nombre ?></h2>
+        </div>
+        <div class="card-desc">
+          <p><?php echo $categoria->descripcion ?></p>
+        </div>
+        <div class="accionBotones">
+          <?php if (isset($_SESSION['logged'])) { ?>
+            <div class="botones-container">
+              <a href="<?php echo BASE_URL ?>eliminarCategorias/<?php echo $categoria->id ?>" class="btn-link eliminar">Eliminar</a>
+              <a href="<?php echo BASE_URL ?>mostrarFormularioActualizarCategorias/<?php echo $categoria->id ?>" class="btn-link actualizar">Actualizar</a>
+            </div>
+          <?php } ?>
+        </div>
+    </a>
+</div>
+<?php } ?>
+</div>

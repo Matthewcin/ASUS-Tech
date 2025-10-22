@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../css/detallesComputadoras.css">
+<div class="producto-detalle">
+  <div class="detalle-imagen">
+    <img src="<?php echo $computadora->img ?>" alt="<?php echo $computadora->modelo ?>">
+  </div>
+
+  <div class="detalle-info">
+    <h2><?php echo $computadora->modelo ?></h2>
+    <p class="precio">$ <?php echo $computadora->precio ?></p>
+
+    <p class="descripcion">
+    <div class="descripcion">
+      <h2>Descripcion</h2>
+    </div>
+    <?php echo $computadora->descripcion ?>
+    </p>
+
+    <button class="btn-comprar">Comprar ahora</button>
+  </div>
+</div>

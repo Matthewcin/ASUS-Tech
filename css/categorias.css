@@ -1,0 +1,61 @@
+.titulo-seccion {
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+
+.titulo-seccion h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 500;
+}
+
+#categorias {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+#categorias a {
+  text-decoration: none;
+  color: inherit;        
+  border: none;
+  outline: none;
+}
+
+#categorias a:focus,
+#categorias a:active {
+  outline: none;
+  border: none;
+}
+
+#categorias .card {
+  background-color: #111;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  width: 250px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+#categorias .card:hover {
+  transform: scale(1.05);
+  background-color: #1a1a1a;
+  box-shadow: 0 0 15px rgba(137, 43, 226, 0.4);
+}
+
+#categorias h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+#categorias p {
+  color: #ccc;
+  font-size: 1.2rem;
+}

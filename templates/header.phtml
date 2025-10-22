@@ -1,0 +1,24 @@
+<!-- Header estilo Asus -->
+</head>
+<base href="<?=BASE_URL?>">
+<body>
+    <header class="barra-navegacion">
+        <div class="logo">
+            <a href="home"><span>ASUSTECH</span></a>
+            <?php if (isset($_SESSION['logged'])) { ?>
+                <a href="<?php echo BASE_URL ?>dashboard"><span>DASHBOARD</span></a>
+            <?php } ?>
+        </div>
+        <nav class="menu">
+            <ul>
+                <?php if (!isset($_SESSION['logged']) || $_SESSION['logged'] == false) { ?>
+                    <li><a href="<?php echo BASE_URL ?>login">Iniciar Sesión</a></li>
+                <?php
+                } else { ?>
+                    <li>
+                        <a href="logout">Cerrar Sesion</a>
+                    </li>
+                <?php } ?>
+            </ul>
+        </nav>
+    </header>

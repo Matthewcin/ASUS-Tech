@@ -1,0 +1,27 @@
+  <link rel="stylesheet" href="../css/formulario.agregar.css">
+  <form action="<?php echo BASE_URL ?>agregarComputadoras" method="POST">
+    <h2>Nuevo Producto</h2>
+
+    <label for="modelo">Modelo:</label>
+    <input type="text" id="modelo" name="modelo" placeholder="Ej: ZX-200" required>
+
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" placeholder="Descripción breve..." required></textarea>
+
+    <label for="precio">Precio (ARS):</label>
+    <input type="number" id="precio" name="precio" placeholder="Ej: 10000" required>
+
+    <label for="gama">Gama:</label>
+    <select id="gama" name="gama" required>
+      <option value="">-- Seleccionar --</option>
+      <option value="1">Gaming</option>
+      <option value="2">Oficina</option>
+      <option value="3">Estudio</option>
+    </select>
+
+    <label for="imagen">URL de la imagen:</label>
+    <input type="text" id="imagen" name="imagen">
+
+    <button type="submit">Guardar</button>
+    <a href="<?php echo BASE_URL ?>dashboard"><button type="button">Volver</button></a>
+  </form>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="<?php echo BASE_URL ?>/css/header.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL ?>/css/carpetasComputadoras.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <?php foreach ($computadorax as $computadora) { ?>
+      <div class="card-container">
+        <a href="<?php echo BASE_URL ?>mostrar_detalle/<?php echo $computadora->id ?>" class="card">
+          <div class="card-content">
+            <img src="<?php echo $computadora->img ?>" class="card-img">
+            <h3> <?php echo $computadora->modelo ?></h3>
+            <p> valor : <?php echo $computadora->precio ?></p>
+          </div>
+        </a>
+
+        <?php if (isset($_SESSION['logged'])) { ?>
+          <div class="botones-container">
+            <a href="<?php echo BASE_URL ?>elimarComputadoras/<?php echo $computadora->id ?>" class="btn-link eliminar">Eliminar</a>
+            <a href="<?php echo BASE_URL ?>mostrarFormularioActualizarComputadoras/<?php echo $computadora->id ?>" class="btn-link actualizar">Actualizar</a>
+          </div>
+        <?php } ?>
+      </div>
+    <?php } ?>
+  </div>
+</body>
+
+</html>

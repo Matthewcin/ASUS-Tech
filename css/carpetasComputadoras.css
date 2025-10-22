@@ -1,0 +1,125 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card {
+      display: block;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+      background: #fff;
+      flex: 1;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    .card img {
+      width: 85%;
+      height: 100px;
+      object-fit: contain;
+      background-color: #f9f9f9;
+      display: block;
+      padding: 8px;
+    }
+
+    .card-content {
+      padding: 12px;
+      text-align: center;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+
+    .card p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2a7ae4;
+      margin: 0;
+    }
+
+    .botones-container {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+      justify-content: center;
+    }
+
+    .btn-link {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .btn-link:hover {
+      transform: scale(1.05);
+      text-decoration: none;
+    }
+
+    .eliminar {
+      background: #ff4444;
+      color: white;
+    }
+
+    .eliminar:hover {
+      background: #cc0000;
+      color: white;
+    }
+
+    .actualizar {
+      background: #44cc44;
+      color: white;
+    }
+
+    .actualizar:hover {
+      background: #2e8b2e;
+      color: white;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      
+      .botones-container {
+        justify-content: space-around;
+      }
+      
+      .btn-link {
+        padding: 5px 10px;
+        font-size: 11px;
+      }
+    }
